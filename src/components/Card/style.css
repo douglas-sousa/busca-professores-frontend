@@ -1,0 +1,98 @@
+/* ESTILO DO CONTAINER */
+.professor-info-container {
+  border: 1px solid #e3e3e3;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+.professor-info-container > div + div {
+  margin-top: 30px;
+}
+
+/*  ESTILO DO TOPINFO */
+.info-gerais {
+  display: grid;
+  grid-template-columns: 100px 60% 100px; 
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 5px;
+}
+
+.info-gerais__esquerda .img-professor {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #c3c3c3;
+}
+
+
+.info-gerais__centro .intro-disciplina {
+  margin: 10px 0;
+}
+
+.info-gerais__centro .nome-professor {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.info-gerais__centro .nome-disciplina__item {
+  display: inline-block;
+  border: 1px solid #ff8008;
+  background-color: #fff;
+  color: #ff8008;
+  padding: 3px 13px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.info-gerais__direita .avaliacao-professor {
+  display: inline-block;
+  font-size: 20px;
+  color: #989898;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.info-gerais__direita .fa-star {
+  display: inline-block;
+  font-size: 20px;
+  color: #ff8008;
+}
+
+
+
+/* ESTILO DO CENTRALINFO */
+.apresentacao-curriculo p {
+  margin-top: 2%;
+  font-size: 17px;
+}
+.apresentacao-curriculo .intro-curriculo {
+  display: inline;
+  border-bottom: 2px solid #ff8008;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* ESTILO DO BOTTOMINFO */
+.local-info .fa-map-marker-alt {
+  display: inline-block;
+  color: #989898;
+}
+
+.local-info .cidade {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* MEDIA*/
+@media screen and (max-width: 510px) {
+  .info-gerais {
+    display: grid;
+    grid-template-columns: 100px 50% 70px; 
+    align-items: center;
+    justify-content: space-evenly;
+    grid-gap: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.barra-inicial {
+  height: 80px;
+  padding: 0 30px;
+  background: #ff8008;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+}

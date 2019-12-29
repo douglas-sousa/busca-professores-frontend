@@ -1,0 +1,23 @@
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto; 
+  align-items: center;
+  grid-gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1099px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto; 
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .card-container {
+    width: 98% !important;
+    margin: 0 auto !important;
+  }
+}
