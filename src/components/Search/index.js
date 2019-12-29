@@ -13,7 +13,7 @@ export default function Search({setTeachers}) {
   const fetchingTeachers = () => {
     //Caso value estaja vazio, será feito um GET
     if(!!value) {
-      axios.post('http://192.168.1.9:3000/professores', {
+      axios.post('https://busca-professores-backend.herokuapp.com/professores', {
         campoNome: 'nome', profNome: value
       })
         .then(res => {
@@ -31,7 +31,7 @@ export default function Search({setTeachers}) {
      * estiver vazio
      */
     else {
-      axios.get('http://192.168.1.9:3000/professores')
+      axios.get('https://busca-professores-backend.herokuapp.com/professores')
         .then(res => {
           setTeachers(res.data.professor);
         })
